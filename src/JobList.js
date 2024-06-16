@@ -1,31 +1,23 @@
 import React from 'react';
-import JobItem from './JobItem';
-import { useSprings, animated } from '@react-spring/web';
+import './styles.css';
 
 const jobs = [
   { id: 1, title: 'Desenvolvedor Frontend', company: 'Empresa X', location: 'São Paulo, SP' },
   { id: 2, title: 'Designer UI/UX', company: 'Empresa Y', location: 'Rio de Janeiro, RJ' },
   { id: 3, title: 'Gerente de Projetos', company: 'Empresa Z', location: 'Belo Horizonte, MG' },
   { id: 4, title: 'Engenheiro de Software', company: 'Empresa A', location: 'Curitiba, PR' },
-  
+  { id: 5, title: 'Analista de Dados', company: 'Empresa B', location: 'Porto Alegre, RS' },
 ];
 
 const JobList = () => {
-  const springs = useSprings(
-    jobs.length,
-    jobs.map((job, index) => ({
-      from: { opacity: 0, transform: 'translate3d(0,40px,0)' },
-      to: { opacity: 1, transform: 'translate3d(0,0,0)' },
-      delay: index * 200,
-    }))
-  );
-
   return (
     <div className="job-list">
-      {springs.map((props, index) => (
-        <animated.div key={jobs[index].id} style={props}>
-          <JobItem job={jobs[index]} />
-        </animated.div>
+      {jobs.map(job => (
+        <div key={job.id} className="job-item">
+          <h2 className="job-title">{job.title}</h2>
+          <p className="job-company">{job.company}</p>
+          <p className="job-location">{job.location}</p>
+        </div>
       ))}
     </div>
   );
