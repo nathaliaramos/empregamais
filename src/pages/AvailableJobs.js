@@ -6,9 +6,9 @@ const availableJobs = [
   {
     id: 4,
     title: "Analista de Marketing Digital",
-    location: "Porto Alegre, RS",
+    location: "São Paulo, SP",
     applicants: 2,
-    logo: "https://via.placeholder.com/80x80?text=EmpresaA",
+    logo: "https://media.licdn.com/dms/image/D4E0BAQEnK1_at9q3PA/company-logo_200_200/0/1656675003147/atento_logo?e=1727308800&v=beta&t=FeM8psydCGDiUY0YSvIoio6Opfao0d8u_hYAX-pl0PQ",
     requirements:
       "Formação em Marketing ou áreas relacionadas; Experiência comprovada em estratégias digitais.",
   },
@@ -17,7 +17,7 @@ const availableJobs = [
     title: "Engenheiro de Software",
     location: "Curitiba, PR",
     applicants: 4,
-    logo: "https://via.placeholder.com/80x80?text=EmpresaB",
+    logo: "https://media.licdn.com/dms/image/D4E0BAQF7xXpFmB5A8A/company-logo_200_200/0/1688459930446/blankfactor_logo?e=1727308800&v=beta&t=0J7kA-zpJMFIBa24tkjdFg6SdA6YVCNlumfesjC5_3k",
     requirements:
       "Graduação em Ciência da Computação ou áreas correlatas; Experiência com desenvolvimento de software.",
   },
@@ -26,7 +26,7 @@ const availableJobs = [
     title: "Analista de Dados",
     location: "Florianópolis, SC",
     applicants: 3,
-    logo: "https://via.placeholder.com/80x80?text=EmpresaC",
+    logo: "https://media.licdn.com/dms/image/C4D0BAQFYRH7noPA56w/company-logo_200_200/0/1669136242286?e=1727308800&v=beta&t=rnRarxu-PljxjyxpQxPIE8vfW08SZwzLWMiDRkweGRI",
     requirements:
       "Formação em Estatística, Matemática, Engenharia de Dados ou áreas relacionadas; Experiência com ferramentas de análise de dados.",
   },

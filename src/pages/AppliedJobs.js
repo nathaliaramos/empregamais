@@ -6,7 +6,7 @@ const appliedJobs = [
   {
     id: 1,
     title: "Desenvolvedor Frontend",
-    company: "Empresa X",
+    company: "Zippia",
     location: "São Paulo, SP",
     applicants: 5,
     stage: "Entrevista Técnica",
@@ -14,7 +14,7 @@ const appliedJobs = [
   {
     id: 2,
     title: "Designer UI/UX",
-    company: "Empresa Y",
+    company: "Atos",
     location: "Rio de Janeiro, RJ",
     applicants: 3,
     stage: "Análise de Portfólio",
@@ -22,7 +22,7 @@ const appliedJobs = [
   {
     id: 3,
     title: "Gerente de Projetos",
-    company: "Empresa Z",
+    company: "Avenue Code",
     location: "Belo Horizonte, MG",
     applicants: 7,
     stage: "Entrevista Inicial",
