@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+ /* <uniquifier>: Use a unique and descriptive class name
+ <weight>: Use a value from 100 to 900 */
+
+div.header{
+    display: flex;
+    padding: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #ffff;
+    height: 20px;
+    
+}
+ 
+h3{
+    color: #F33A6A;
+    margin-right: 10px;
+}
+h3:hover{
+    cursor: pointer;
+}
+body{
+    
+    font-family: "Montserrat", sans-serif;
+    margin: 0px;
+    background-color: #0D3FBF;
+}
+img.img-logo{
+    margin-top: 0px;
+    margin-right: auto;
+    width: 70px;
+    height: 55px;
+}
+img.img-vagas{
+    
+    margin-left: auto;
+    width: 50px;
+    height: 42px;
+}
+img.img-vagas:hover{
+    cursor: pointer;
+}
+.vagas{
+    margin-left: auto;
+    width: 50px;
+    height: 42px;
+}
+div.botao{
+    width: 105px;
+    height: 38px;
+    margin-left: 10px;
+    text-align: center;
+    color: #ffff;
+    background-color: #F33A6A;
+    border: none;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.500) 0px 2px 3px 0px;
+    display: flex; /* Adiciona Flexbox */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.botao:active{
+    transform: scale(0.95);
+    box-shadow: rgba(0, 0, 0, 0.500) 0px 0px 0px 0px;
+}
+.vagas:active{
+    transform: scale(0.95);
+    box-shadow: rgba(0, 0, 0, 0.500) 0px 0px 0px 0px;
+}
+.risco{
+    font-size: 53px;
+    font-weight: 100;
+    margin-bottom: 47px;
+    color: black;
+}
