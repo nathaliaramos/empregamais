@@ -3,17 +3,17 @@
  /* <uniquifier>: Use a unique and descriptive class name
  <weight>: Use a value from 100 to 900 */
 
-div.header{
+div.headerLogin{
     display: flex;
     padding: 20px;
     justify-content: flex-start;
     align-items: center;
     background-color: #ffff;
-    height: 20px;
+    height: 60px;
     
 }
  
-h3{
+.vougue{
     color: #F33A6A;
     margin-right: 10px;
 }
@@ -26,7 +26,7 @@ body{
     margin: 0px;
     background-color: #0D3FBF;
 }
-img.img-logo{
+img.img-logoL{
     margin-top: 0px;
     margin-right: auto;
     width: 70px;

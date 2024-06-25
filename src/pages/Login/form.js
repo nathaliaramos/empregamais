@@ -19,12 +19,12 @@ const Form = () => {
         // Add form submission logic here
     };
     return (
-        <form className="form-container" onSubmit={handleSubmit}>
-            <h1 className="title">Entrar</h1>
+        <form className="form-containerL" onSubmit={handleSubmit}>
+            <h1 className="titleL">Entrar</h1>
             <div className="form-section">
-                <div className="input-group">
+                <div className="input-groupL">
                 </div>
-                <div className="input-group">
+                <div className="input-groupL">
                     <label>
                         Email
                         <input
@@ -37,7 +37,7 @@ const Form = () => {
                         />
                     </label>
                 </div>
-                <div class="input-group">
+                <div class="input-groupL">
                     <label>
                         Senha
                         <input
@@ -67,7 +67,7 @@ const Form = () => {
                 </div>
             </div>
              <p class="forgot-password"><a href="./login.js">Esqueceu sua senha?</a></p>
-            <button type="submit" >ENTRAR</button>
+            <button className="submeter" type="submit" >ENTRAR</button>
             {/* colocar aqui o caminho relativo ao imput radio */}
             <p class="signup-text">Não tem uma conta? <a href="#">Cadastre-se já!</a></p>
         </form>

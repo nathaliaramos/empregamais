@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import AppliedJobs from "../pages/AppliedJobs";
 import AvailableJobs from "../pages/AvailableJobs";
 import FormComponent from "../pages/FormComponent";
+import Login from "../pages/Login/index"
 
 const Main = styled.main`
   display: flex;
