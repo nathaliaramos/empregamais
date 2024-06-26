@@ -1,20 +1,20 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import GlobalStyle from "./GlobalStyle";
-import Header from "./components/Header";
 import MainContent from "./components/MainContent";
 import Footer from "./components/Footer";
-import CompanyJobs from './pages/CompanyJobs';
+import Login from "./pages/Login";
 
+//  PAGINA FEITA APENAS PARA IMPLEMENTAR AS ROTAS DO MAIN CONTENT E DO LOGIN  
 function App() {
   return (
     <Router>
       <GlobalStyle />
-      <Header />
       <Routes>
-        <Route path="/company-jobs" element={<CompanyJobs />} />
-        <Route path="/" element={<MainContent />} />
+        <Route path="/*" element={<MainContent />} />
+        <Route path="/" element={<Login />} />
         </Routes>
+        
       <Footer />
     </Router>
   );

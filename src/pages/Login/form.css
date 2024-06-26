@@ -17,7 +17,7 @@
     text-align: center;
 }
 
-button {
+.submeter {
     width: 105px;
     height: 38px;
     margin-left: 10px;
@@ -41,16 +41,29 @@ button {
     margin-left: 84px;
 }
 
-button[type="submit"]:active {
+button[type="button"]:active {
     transform: scale(0.95);
     box-shadow: rgba(0, 0, 0, 0.500) 0px 0px 0px 0px;
 }
 
-.radios {
+/* .radios {
     margin-bottom: 10px;
     position: relative;
     top: 10px;
+} */
+.radios {
+    display: flex;
+    gap: 10px; /* Adiciona espaço entre os itens */
+    margin-bottom: 20px; /* Adiciona espaço abaixo dos rádios */
+    position: relative;
+    top: 20px;
 }
+
+.radios label {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Adiciona espaço entre o rádio e o texto */
+} 
 
 .forgot-password {
     font-size: 12px;

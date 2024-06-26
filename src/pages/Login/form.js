@@ -1,12 +1,15 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./form.css";
+
 const Form = () => {
     const [formData, setFormData] = useState({
         email: "",
         password: "",
-        user: ""
-
+        user: "aluno"
     });
+
+    const navigate = useNavigate();
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -16,14 +19,18 @@ const Form = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log("Form Data Submitted:", formData);
-        // Add form submission logic here
+
+        if (formData.user === "aluno") {
+            navigate("/main/form");
+        } else if (formData.user === "empresa") {
+            navigate("/main/applied-jobs");
+        }
     };
+
     return (
         <form className="form-containerL" onSubmit={handleSubmit}>
             <h1 className="titleL">Entrar</h1>
             <div className="form-section">
-                <div className="input-groupL">
-                </div>
                 <div className="input-groupL">
                     <label>
                         Email
@@ -37,7 +44,7 @@ const Form = () => {
                         />
                     </label>
                 </div>
-                <div class="input-groupL">
+                <div className="input-groupL">
                     <label>
                         Senha
                         <input
@@ -51,26 +58,31 @@ const Form = () => {
                     </label>
                 </div>
                 <div className="radios">
-                    <input
-                        type="radio"
-                        name="usuario"
-                        value={formData.user}
-                        onChange={handleChange}
-                        checked
-                    /> Aluno
-                    <input
-                        type="radio"
-                        name="usuario"
-                        value={formData.user}
-                        onChange={handleChange}
-                    /> Empresa
+                    <label>
+                        <input
+                            type="radio"
+                            name="user"
+                            value="aluno"
+                            onChange={handleChange}
+                            checked={formData.user === "aluno"}
+                        /> Aluno
+                    </label>
+                    <label>
+                        <input
+                            type="radio"
+                            name="user"
+                            value="empresa"
+                            onChange={handleChange}
+                            checked={formData.user === "empresa"}
+                        /> Empresa
+                    </label>
                 </div>
             </div>
-             <p class="forgot-password"><a href="./login.js">Esqueceu sua senha?</a></p>
-            <button className="submeter" type="submit" >ENTRAR</button>
-            {/* colocar aqui o caminho relativo ao imput radio */}
-            <p class="signup-text">Não tem uma conta? <a href="#">Cadastre-se já!</a></p>
+            <p className="forgot-password"><a href="./login.js">Esqueceu sua senha?</a></p>
+            <button className="submeter" type="submit">ENTRAR</button>
+            <p className="signup-text">Não tem uma conta? <a href="/">Cadastre-se já!</a></p>
         </form>
     );
 };
+
 export default Form;

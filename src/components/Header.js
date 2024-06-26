@@ -31,10 +31,10 @@ const Header = () => {
         <NavButton to="/">
           <FaHome /> Início
         </NavButton>
-        <NavButton to="/company-jobs">
+        <NavButton to="/main/company-jobs">
           <FaBriefcase /> Vagas da Empresa
         </NavButton>
-        <NavButton to="/form">
+        <NavButton to="/main/form">
           <FaUserEdit /> Editar Perfil
         </NavButton>
       </Nav>

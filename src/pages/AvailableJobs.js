@@ -1,5 +1,4 @@
 import React from "react";
-import AppliedJobItem from "../AppliedJobItem";
 import styled from "styled-components";
 
 const availableJobs = [
@@ -114,6 +113,7 @@ const Button = styled.button`
 const AvailableJobs = () => {
   return (
     <AppliedJobsContainer>
+      
       <WelcomeText>Bem-vindo ao EmpregaMais</WelcomeText>
       <Subtitle>Veja novas vagas disponíveis para você se candidatar:</Subtitle>
       <div className="applied-job-list">

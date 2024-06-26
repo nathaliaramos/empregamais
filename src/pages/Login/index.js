@@ -5,7 +5,6 @@ import HeaderLogin from "../../components/HeaderLogin/index";
 import Form from "./form";
 import foto2 from "../../utils/Foto2.png"
 const Login = () => (
-
     <div>
         <HeaderLogin />
         <div className="container">

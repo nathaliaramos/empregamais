@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./FormComponent.css";
+import { useNavigate } from "react-router-dom";
 
 const FormComponent = () => {
   const [formData, setFormData] = useState({
@@ -37,13 +38,16 @@ const FormComponent = () => {
     setFormData({ ...formData, [name]: value });
   };
 
+  const navigate = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Form Data Submitted:", formData);
     // Add form submission logic here
+    navigate("/main/available-jobs")
   };
 
   return (
+    
     <form className="form-container" onSubmit={handleSubmit}>
       <h1>Cadastre seu currículo!</h1>
       <div className="form-section">
