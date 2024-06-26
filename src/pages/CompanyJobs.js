@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 const company = {
   name: "Tech Solutions",
-  logo: "https://via.placeholder.com/150", // URL do logo da empresa
+  logo: "https://i.ibb.co/0Ymd1RV/tech.png", 
 };
 
 const companyJobs = [
