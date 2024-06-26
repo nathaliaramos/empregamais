@@ -92,7 +92,7 @@ const CompanyLogo = styled.img`
 `;
 
 const Button = styled.button`
-  background-color: #0d3fbf; /* Cor azul escolhida */
+  background-color: #0d3fbf; 
   color: white;
   border: none;
   padding: 10px 20px;
@@ -102,11 +102,11 @@ const Button = styled.button`
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   margin-top: 10px;
-  width: auto; /* Ajusta a largura automaticamente */
+  width: auto; 
   transition: background-color 0.3s;
 
   &:hover {
-    background-color: #0056b3; /* Cor mais escura ao passar o mouse */
+    background-color: #0056b3; 
   }
 `;
 

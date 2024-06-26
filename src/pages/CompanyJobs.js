@@ -130,12 +130,12 @@ const CompanyJobs = () => {
   };
 
   const handleRemoveJob = (jobId) => {
-    // Simula a remoção de uma vaga
+    
     alert(`Vaga com ID ${jobId} removida.`);
   };
 
   const handleEditJob = (jobId) => {
-    // Simula a edição de uma vaga
+    
     alert(`Edição da vaga com ID ${jobId} iniciada.`);
   };
 
