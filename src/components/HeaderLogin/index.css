@@ -46,7 +46,7 @@ img.img-vagas:hover{
     width: 50px;
     height: 42px;
 }
-div.botao{
+button.botao{
     width: 105px;
     height: 38px;
     margin-left: 10px;
@@ -76,4 +76,9 @@ div.botao{
     font-weight: 100;
     margin-bottom: 47px;
     color: black;
+}
+
+.popup{
+    position: absolute;
+    margin-left: 80%;
 }

@@ -34,7 +34,7 @@ const Header = () => {
         <NavButton to="/main/company-jobs">
           <FaBriefcase /> Vagas da Empresa
         </NavButton>
-        <NavButton to="/main/form">
+        <NavButton to="/edit-profile">
           <FaUserEdit /> Editar Perfil
         </NavButton>
       </Nav>
@@ -43,4 +43,3 @@ const Header = () => {
 };
 
 export default Header;
-
