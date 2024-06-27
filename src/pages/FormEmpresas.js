@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import "./FormEmpresas.css";
-
+import { useNavigate } from "react-router-dom";
 
 
 const FormEmpresas = () => {
@@ -39,10 +39,13 @@ const FormEmpresas = () => {
         setFormData({ ...formData, [name]: value });
     };
 
+    const navigate = useNavigate();
+    
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log("Form Data Submitted:", formData);
         // Add form submission logic here
+        navigate("/main/company-jobs");
     };
 
     return (
@@ -354,7 +357,7 @@ const FormEmpresas = () => {
                 </label>
             </div>
 
-            <button type="submit">CADASTRAR</button>
+            <button className='enviar' type="submit">CADASTRAR</button>
         </form>
     );
 };

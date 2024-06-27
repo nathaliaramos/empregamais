@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./CadastroAluno.css";
-
 function CadastroAluno() {
   const [courses, setCourses] = useState([
     { curso: "", instituicao: "", horas: "" },
@@ -139,7 +138,7 @@ function CadastroAluno() {
           <label>Nome da empresa*</label>
           <input type="text" required />
         </div>
-        <button type="submit">CADASTRAR</button>
+        <button className="enviar" type="submit">CADASTRAR</button>
       </form>
     </div>
   );

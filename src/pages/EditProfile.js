@@ -144,7 +144,7 @@ function EditProfile() {
           <label>Nome da empresa*</label>
           <input type="text" required defaultValue="Empresa Atual" />
         </div>
-        <button type="submit">SALVAR</button>
+        <button className='enviar' type="submit">SALVAR</button>
       </form>
     </div>
   );

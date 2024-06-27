@@ -21,16 +21,16 @@ const Form = () => {
     console.log("Form Data Submitted:", formData);
 
     if (formData.user === "aluno") {
-      navigate("/main/company-jobs");
+      navigate("/main/available-jobs");
     } else if (formData.user === "empresa") {
-      navigate("/main/applied-jobs");
+      navigate("/main/company-jobs");
     }
   };
 
   return (
     <form className="form-containerL" onSubmit={handleSubmit}>
       <h1 className="titleL">Entrar</h1>
-      <div className="form-section">
+      <div className="form-sectionL">
         <div className="input-groupL">
           <label>
             Email
@@ -81,13 +81,13 @@ const Form = () => {
         </div>
       </div>
       <p className="forgot-password">
-        <a href="./login.js">Esqueceu sua senha?</a>
+        <a href="./">Esqueceu sua senha?</a>
       </p>
       <button className="submeter" type="submit">
         ENTRAR
       </button>
       <p className="signup-text">
-        Não tem uma conta? <a href="/">Cadastre-se já!</a>
+        Não tem uma conta? <a href="/cadastro-aluno">Cadastre-se já!</a>
       </p>
     </form>
   );

@@ -26,10 +26,10 @@ const HeaderLogin = () => {
       <a href="/">
         <img src={logoL} className="img-logoL" alt="logoL"></img>
       </a>
-      <a href="/main/available-jobs" className="vagas">
+      <a href="/main/available-jobsD" className="vagas">
         <img src={vagas} className="img-vagas" alt="vagas"></img>
       </a>
-      <a href="/main/available-jobs">
+      <a href="/main/available-jobsD">
         <h3 className="vougue">Vagas</h3>
       </a>
 

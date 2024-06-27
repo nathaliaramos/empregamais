@@ -35,7 +35,7 @@ input[type="tel"] {
     border: none;
 }
 
-button[type="submit"] {
+.enviar {
     background-color: #f50057;
     /* Pink button color */
     color: white;
@@ -45,7 +45,7 @@ button[type="submit"] {
     cursor: pointer;
 }
 
-button[type="submit"]:hover {
+.enviar:hover {
     background-color: #ff4081;
     /* Lighter pink on hover */
 }

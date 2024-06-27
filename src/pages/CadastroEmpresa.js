@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./CadastroEmpresa.css";
+import { useNavigate } from "react-router-dom";
 
 function CadastroEmpresa({ onRegister }) {
   const [formData, setFormData] = useState({
@@ -28,9 +29,12 @@ function CadastroEmpresa({ onRegister }) {
     });
   };
 
+  const navigate = useNavigate();
+
   const handleSubmit = (e) => {
     e.preventDefault();
     onRegister(formData);
+    navigate("/main/company-jobs");
   };
 
   return (
@@ -170,7 +174,7 @@ function CadastroEmpresa({ onRegister }) {
             required
           />
         </div>
-        <button type="submit">CADASTRAR</button>
+        <button className='enviar' type="submit">CADASTRAR</button>
       </form>
     </div>
   );

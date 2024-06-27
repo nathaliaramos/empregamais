@@ -1,10 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   BrowserRouter as Router,
   Route,
-  Routes,
-  Navigate,
-  useLocation,
+  Routes
 } from "react-router-dom";
 import "./App.css";
 import GlobalStyle from "./GlobalStyle";
@@ -12,12 +10,27 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import CadastroEmpresa from "./pages/CadastroEmpresa";
 import EditProfile from "./pages/EditProfile";
-import AppliedJobs from "./pages/AppliedJobs";
-import AvailableJobs from "./pages/AvailableJobs";
 import CadastroAluno from "./pages/CadastroAluno";
 import MainContent from "./components/MainContent";
-//                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                import Footer from "./components/Footer";
 import Login from "./pages/Login";
+import { FaHome, FaBriefcase } from "react-icons/fa";
+import { TbBriefcase2Filled, TbLogout } from "react-icons/tb";
+
+
+const buttonsEditProfile = [
+  { path: "/main/available-jobs", label: "Vagas", icon: <FaBriefcase /> },
+  { path: "/", label: "Sair", icon: <TbLogout /> }
+];
+
+const buttonsCadastroEmpresa = [
+  { path: "/", label: "Início", icon: <FaHome /> },
+  
+];
+
+const buttonsCadastroAluno = [
+  { path: "/", label: "Início", icon: <FaHome /> },
+  { path: "/main/available-jobsD", label: "Vagas", icon: <TbBriefcase2Filled /> }
+];
 
 function App() {
   return (
@@ -26,29 +39,19 @@ function App() {
         <GlobalStyle />
         <Routes>
           <Route
-            path="/available-jobs"
-            element={
-              <>
-                <Header />
-                <AvailableJobs />
-              </>
-            }
-          />
-          <Route
             path="/edit-profile"
             element={
               <>
-                <Header />
+                <Header buttons={buttonsEditProfile} />
                 <EditProfile />
               </>
             }
           />
-
           <Route
             path="/cadastro-empresa"
             element={
               <>
-                <Header />
+                <Header buttons={buttonsCadastroEmpresa} />
                 <CadastroEmpresa />
               </>
             }
@@ -57,7 +60,7 @@ function App() {
             path="/cadastro-aluno"
             element={
               <>
-                <Header />
+                <Header buttons={buttonsCadastroAluno} />
                 <CadastroAluno />
               </>
             }

@@ -15,8 +15,18 @@
 
 .titleL {
     text-align: center;
+    position: absolute;
+    right: 100px;
 }
 
+.form-sectionL{
+    right: 8px;
+    width: 288px;
+    height: 366px;
+    top: 91px;
+    position: absolute;
+
+}
 .submeter {
     width: 105px;
     height: 38px;
@@ -39,6 +49,8 @@
     font-family: 'Montserrat';
     font-weight: 700;
     margin-left: 84px;
+    position: absolute;
+    bottom: 15px;
 }
 
 button[type="button"]:active {
@@ -55,8 +67,7 @@ button[type="button"]:active {
     display: flex;
     gap: 10px; /* Adiciona espaço entre os itens */
     margin-bottom: 20px; /* Adiciona espaço abaixo dos rádios */
-    position: relative;
-    top: 20px;
+    
 }
 
 .radios label {
@@ -68,11 +79,10 @@ button[type="button"]:active {
 .forgot-password {
     font-size: 12px;
     text-align: right;
-    margin-top: -10px;
     margin-bottom: 20px;
-    position: relative;
-    left: 29px;
-    top: -29px;
+    position: absolute;
+    left: 146px;
+    bottom: 92px;
     color: #ffffff;
 }
 
@@ -90,8 +100,12 @@ a:-webkit-any-link {
 
 .signup-text {
     text-align: center;
-    margin-top: 20px;
+    margin: 5px;
     font-size: 14px;
+    width: 300px;
+    height: 20px;
+    position: absolute;
+    bottom: -15px;;
 }
 
 .signup-text a {
@@ -103,7 +117,7 @@ a:-webkit-any-link {
     text-decoration: underline;
 }
 
-form.form-containerL {
+.form-containerL {
     position: relative;
     right: 8px;
     width: 288px;

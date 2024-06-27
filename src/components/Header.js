@@ -23,20 +23,16 @@ const Nav = styled.nav`
   gap: 10px;
 `;
 
-const Header = () => {
+const Header = ({ buttons }) => {
   return (
     <HeaderComponent>
       <Logo />
       <Nav>
-        <NavButton to="/">
-          <FaHome /> Início
-        </NavButton>
-        <NavButton to="/main/company-jobs">
-          <FaBriefcase /> Vagas da Empresa
-        </NavButton>
-        <NavButton to="/edit-profile">
-          <FaUserEdit /> Editar Perfil
-        </NavButton>
+        {buttons.map((button, index) => (
+          <NavButton key={index} to={button.path}>
+            {button.icon} {button.label}
+          </NavButton>
+        ))}
       </Nav>
     </HeaderComponent>
   );

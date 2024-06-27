@@ -64,7 +64,7 @@ input[type="checkbox"] {
     width: auto;
 }
 
-button[type="submit"],
+.enviar,
 button[type="button"] {
     grid-column: span 2;
     background-color: #ff0043;
@@ -75,7 +75,7 @@ button[type="button"] {
     transition: background-color 0.3s;
 }
 
-button[type="submit"]:hover,
+.enviar:hover,
 button[type="button"]:hover {
     background-color: #cc0037;
 }

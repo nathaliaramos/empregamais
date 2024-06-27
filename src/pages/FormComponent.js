@@ -338,7 +338,7 @@ const FormComponent = () => {
         </label>
       </div>
 
-      <button type="submit">CADASTRAR</button>
+      <button className='enviar' type="submit">CADASTRAR</button>
     </form>
   );
 };
