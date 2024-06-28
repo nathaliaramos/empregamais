@@ -1,0 +1,73 @@
+body{
+    font-family: "Montserrat", sans-serif;
+    margin: 0px;
+    background-color: #0D3FBF;
+    color: #FFFF;
+    width: 100%;
+}
+
+.texto1{
+    width: 766px;
+    height: 217px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.texto2{
+   
+    position: absolute;
+    right: 35px; /* Posiciona à direita */  
+    top: 100%; /* Centraliza verticalmente */
+    transform: translateY(-50%); /* Ajusta a centralização */
+    text-align: right;
+}
+.texto3{
+    width: 870px;
+    height: 345px;
+    margin-left: 50px
+}
+.container {
+    position: relative;
+}
+.fundo{
+    width: 400px;
+    height: 400px;
+    background-color: #D9D9D9;
+    opacity: 10%;
+    border-radius: 15px;
+    box-shadow: rgb(0 0 0 / 100%) 5px 5px 2px 2px;
+    position: absolute;
+    right: 35px; /* Posiciona à direita */  
+    top: 85%; /* Centraliza verticalmente */
+    transform: translateY(-50%); /* Ajusta a centralização */
+}
+h1{
+ font-size: 32px;
+ font-weight: 400;
+}
+h4{
+    font-size: 20px;
+    font-weight: 200;
+}
+span{
+    color: #F33A6A;
+}
+.estudante{
+    width: 500px;
+    height: 400px;
+    border-radius: 20px;
+}
+.entrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 83px;
+    top: 80%;
+    transform: translateY(-50%); 
+}
+.estudante2{
+    height: 400px;
+    position: absolute;
+    top: 726px;
+    right: 120px;
+}

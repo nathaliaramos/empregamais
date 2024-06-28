@@ -1,0 +1,51 @@
+.form-container {
+    background-color: #1E3D7C;
+    /* Blue background color */
+    color: white;
+    /* White text color */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-section {
+    margin-bottom: 20px;
+}
+
+.form-section h2 {
+    border-bottom: 2px solid #f50057;
+    /* Pink underline for section titles */
+    padding-bottom: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="tel"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.enviar {
+    background-color: #f50057;
+    /* Pink button color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.enviar:hover {
+    background-color: #ff4081;
+    /* Lighter pink on hover */
+}
